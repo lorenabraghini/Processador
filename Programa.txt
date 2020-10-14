@@ -1,0 +1,14 @@
+.data
+.word 1, 2, 3, 4
+.text
+li $s1, 2
+li $s2, 3
+add $s3, $s1, $s2
+sub $s4, $s2, $s1
+li $s2, 2
+beq $s1, $s2, 10
+slt $s4, $s1, $s3 
+move $s1, $s3
+bne $s1, $s2, 13
+slt $s4, $s1, $s3 
+la $s1, 1
